@@ -1,0 +1,4 @@
+% We conduct 1000 repititions on the experiments.
+% It is straighforward to calculate chi-square with degree of freedom 1 and k-1
+% To calculate q_n, we call Mathematica inside MATLAB.
+% During the experiment, when in continuous case, rarely the value of q_n would fall to zero when solving the euqation. Since there is no cap on the data. In the rare occurrence where numerical issues arise, we resample the data set to recalibrate the uncertainty set. In our implementation, this happens only one or two times among 1000 repetitions when the considered sample size is relatively big, e.g., 70 or 80, and the results wouldn't be affected much should we drop these instances.
